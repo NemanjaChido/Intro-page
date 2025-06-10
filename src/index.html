@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body class="grid w-screen min-h-screen grid-cols-1 [grid-template-rows:4rem_1fr] Almost-White">
+  <nav class="relative flex flex-row p-4 items-center justify-between w-full md:grid md:grid-rows-1 md:[grid-template-columns:4rem_1fr] ">
+    <div class="flex items-center justify-center w-1/5 h-full md:w-16">
+        <img class="" src="images/logo.svg" >
+    </div>
+    <div id="menu" class="absolute top-0 right-0 z-10 flex-col hidden w-2/3 h-screen p-6 bg-white md:bg-transparent md:justify-between md:flex md:flex-row md:relative md:h-full md:w-full">
+        <span id="menu-close" class="flex justify-end p-3 md:hidden">
+            <img src="images/icon-close-menu.svg" >
+        </span>
+        <ul class="flex flex-col gap-6 md:pl-8 md:flex md:flex-row Medium-Gray md:items-center md:gap-8">
+            <li id="dropdown" class="relative grid w-full grid-cols-2 [grid-template-rows:3rem_1fr] font-semibold list-none cursor-pointer md:flex md:flex-row md:w-25 group hover:text-black">
+                    <span class="flex items-center col-span-1 col-start-1 md:w-3/4 md:h-full">Features</span> 
+                    <div class="col-span-1 col-start-2 md:w-1/6">
+                        <span id="arrow-up" class="z-10 flex items-center justify-start w-full h-full"><img src="images/icon-arrow-down.svg"></span> 
+                        <span id="arrow-down" class="items-center justify-start hidden w-full h-full"><img src="images/icon-arrow-up.svg" ></span>
+                    </div>
+                    <div id="dropwdown-menu" class="bg-white col-start-1 col-span-2 md:rounded-xl md:shadow-2xl hidden gap-2 relative md:top-10 right-0 md:absolute w-full md:w-40 md:right-1 group-hover:grid p-5 grid-rows-4 [grid-template-columns:2rem_1fr]">
+                        <img src="images/icon-todo.svg" ><span>Todo List</span>
+                        <img src="images/icon-calendar.svg" ><span>Calendar</span>
+                        <img src="images/icon-reminders.svg" ><span>Reminders</span>
+                        <img src="images/icon-planning.svg" ><span>Planning</span>
+                    </div>
+            </li>
+            <li id="dropdown-2" class="relative grid grid-cols-2 [grid-template-rows:3rem_1fr] w-full font-semibold list-none cursor-pointer md:flex md:flex-row md:justify-between md:w-25 group hover:text-black">
+                <span class="flex items-center col-span-1 col-start-1 md:w-3/4 md:h-full">Company</span> 
+                <div class="col-span-1 col-start-2 md:w-1/6">
+                    <span id="arrow-2-up" class="z-10 flex items-center justify-start w-full h-full"><img src="images/icon-arrow-down.svg"></span> 
+                    <span id="arrow-2-down" class="items-center justify-start hidden w-full h-full"><img src="images/icon-arrow-up.svg" ></span>
+                </div>
+                <ul id="dropwdown-menu-2" class="relative flex-col hidden w-full col-span-2 col-start-1 gap-2 p-5 bg-white md:shadow-2xl top-5 md:absolute md:top-10 group-hover:flex md:w-30 md:rounded-xl">
+                    <li>History</li>
+                    <li>Our Team</li>
+                    <li>Blog</li>
+                </ul>
+            </li>
+            <li class="font-semibold list-none cursor-pointer hover:text-black"><a href="#">Careers</a></li>
+            <li class="font-semibold list-none cursor-pointer hover:text-black"><a href="#">About</a></li>
+        </ul>
+        <ul class= "flex flex-col gap-6 pt-4 md:flex md:flex-row Medium-Gray md:items-center md:gap-8 md:justify-end">
+            <li class="font-semibold text-center list-none cursor-pointer hover:text-black"><a href="#">Login</a></li>
+            <li class="p-3 font-semibold text-center list-none cursor-pointer rounded-xl hover:text-black border-line hover:border-2 hover:border-black"><a href="#">Register</a></li>
+        </ul>
+    </div>
+    <div id="menu-open" class="block w-16 h-full p-2 md:hidden">
+        <img class="w-full h-full" src="images/icon-menu.svg" >
+    </div>
+  </nav>
+  <main class="flex flex-col w-full h-full p-4 md:flex-row-reverse md:p-10">
+    <section class="w-full h-1/2 md:w-1/2 md:h-full">
+        <img class="w-full h-full md:hidden" src="images/image-hero-mobile.png" >
+        <img class="hidden w-full h-full p-8 md:block" src="images/image-hero-desktop.png" >
+    </section>
+    <section class="relative flex flex-col items-center w-full pt-10 h-1/2 md:w-1/2 md:h-full md:items-start md:justify-center">
+        <h1 class="text-5xl font-bold md:text-8xl">Make remote work</h1>
+        <p class="mt-6 mb-6 font-semibold text-center md:text-start text-wrap Medium-Gray">Get your team in sync, no matter your location. Streamline processes, create team rituals and watch productivity soar.</p>
+        <button class="p-4 mb-10 text-2xl font-bold text-white cursor-pointer Almost-black rounded-xl">Learn more</button>
+
+        <article class="grid items-center w-full grid-cols-4 grid-rows-1 gap-6">
+            <span>
+                <img src="images/client-databiz.svg" >
+            </span>
+            <span>
+                <img src="images/client-audiophile.svg" >
+            </span>
+            <span>
+                <img src="images/client-meet.svg" >
+            </span>
+            <span>
+                <img src="images/client-maker.svg" >
+            </span>
+        </article>
+    </section>
+  </main>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
